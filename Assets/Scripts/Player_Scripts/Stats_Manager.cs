@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -8,7 +9,6 @@ public class Stats_Manager : MonoBehaviour
     public static Stats_Manager instance;
 
     [Header("Player Combat Stats")]
-
     public float attackRange;
     public float damage;
     public float knockbackForce;
@@ -18,13 +18,18 @@ public class Stats_Manager : MonoBehaviour
     //TODO crit
 
     [Header("Player Movement Stats")]
-
     public float speed;
 
     [Header("Player Hp Stats")]
-
     public float currentHP;
     public float maxHP;
+
+    [Header("Player Exp Stats")]
+    public int level;
+    public float expGain;
+    public float currentExp;
+    public float expToLevel;
+    public float expGrowthMultiplier = 2;
 
     private void Awake()
     {
@@ -37,4 +42,5 @@ public class Stats_Manager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 }

@@ -29,7 +29,7 @@ public class Player_HP : MonoBehaviour
         UpdateUI();
     }
 
-    public void UpdateUI()
+    private void UpdateUI()
     {
         hpBar.maxValue = Stats_Manager.instance.maxHP;
         hpBar.value = Stats_Manager.instance.currentHP;

@@ -43,7 +43,7 @@ public class Exp_Manager : MonoBehaviour
         OnLevelUp?.Invoke(1);
     }
 
-    public void UpdateUI()
+    private void UpdateUI()
     {
         expSlider.maxValue = Stats_Manager.instance.expToLevel;
         expSlider.value = Stats_Manager.instance.currentExp;

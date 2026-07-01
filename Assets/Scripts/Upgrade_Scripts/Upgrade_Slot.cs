@@ -1,0 +1,48 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
+using static UnityEditor.Progress;
+
+public class Upgrade_Slot : MonoBehaviour
+{
+    [SerializeField] private Upgrade_SO upgradeSO;
+    [SerializeField] private Image upgradeImage;
+    [SerializeField] private TMP_Text upgradeNameText;
+    [SerializeField] private TMP_Text upgradeDescriptionText;
+    [SerializeField] private Button upgradeButton;
+
+    public static event Action<Upgrade_SO> OnUpgradeChosen;
+
+    private void Awake()
+    {
+        upgradeButton = GetComponent<Button>();
+        upgradeButton.onClick.AddListener(OnUpgradeClicked);
+    }
+
+    //Spawn an Upgrade_Slot (not actually spawn one, just turn them on and fill them up with data, spawning things is a story for another day)
+    public void Initialize(Upgrade_SO upgradeSO)
+    {
+        if (upgradeSO != null)
+        {
+            gameObject.SetActive(true);
+            this.upgradeSO = upgradeSO;
+            upgradeImage.sprite = upgradeSO.icon;
+            upgradeNameText.text = upgradeSO.upgradeName;
+            upgradeDescriptionText.text = upgradeSO.description;
+        }
+        else
+        {
+            gameObject.SetActive(false);
+        }
+    }
+
+    //An onclick trigger method to fire up an event to all its listener to pass the Upgrade_SO for their logic
+    public void OnUpgradeClicked()
+    {
+        OnUpgradeChosen?.Invoke(upgradeSO);
+    }
+}

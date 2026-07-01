@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Upgrade_Manager : MonoBehaviour
 {
+    //TODO a reference to player Class_SO to pull the class Upgrade_SO list
     [SerializeField] private Upgrade_Slot[] upgradeSlots;
     [SerializeField] private Upgrade_SO[] upgradeSOs;
     [SerializeField] private Upgrade_UI upgradeUI;
@@ -38,7 +39,7 @@ public class Upgrade_Manager : MonoBehaviour
 
         for (int i = 0; i < upgradeSlots.Length; i++)
         {
-            upgradeSlots[i].Initialize(randomUpgrades[i]);
+            upgradeSlots[i].ShowSlot(randomUpgrades[i]);
         }
     }
 

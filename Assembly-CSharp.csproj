@@ -64,10 +64,15 @@
     <Compile Include="Assets\Scripts\Upgrade_Scripts\Upgrade_Slot.cs" />
     <Compile Include="Assets\Scripts\Upgrade_Scripts\Upgrade_Manager.cs" />
     <Compile Include="Assets\Scripts\Player_Scripts\Player_HP.cs" />
+    <Compile Include="Assets\Scripts\Player_Scripts\Projectile.cs" />
+    <Compile Include="Assets\Scripts\Player_Scripts\Player_Controller.cs" />
     <Compile Include="Assets\Scripts\Player_Scripts\Stats_Manager.cs" />
     <Compile Include="Assets\Scripts\Upgrade_Scripts\Upgrade_UI.cs" />
+    <Compile Include="Assets\Scripts\Player_Scripts\Player_Class.cs" />
+    <Compile Include="Assets\Scripts\Player_Scripts\Class_SO.cs" />
+    <Compile Include="Assets\Scripts\Player_Scripts\Player_Combat.cs" />
     <Compile Include="Assets\Scripts\Upgrade_Scripts\Upgrade_SO.cs" />
-    <Compile Include="Assets\Scripts\Player_Scripts\Player_Movement.cs" />
+    <Compile Include="Assets\Scripts\Player_Scripts\Weapon_Animation_Trigger.cs" />
     <Compile Include="Assets\Scripts\Player_Scripts\Exp_Manager.cs" />
   </ItemGroup>
   <ItemGroup>

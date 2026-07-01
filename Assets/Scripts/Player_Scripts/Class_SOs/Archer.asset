@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 214b14fcc8302bc49b1c0bbd260d281d, type: 3}
+  m_Name: Archer
+  m_EditorClassIdentifier: 
+  className: Archer
+  damage: 1
+  maxHP: 5
+  cooldown: 1
+  speed: 5
+  attackRange: 5
+  knockbackForce: 1
+  knockbackTime: 1
+  stunTime: 1
+  isRanged: 1
+  projectileSprite: {fileID: 21300000, guid: 8489a61a4cef58a48ae23d06794ad5b8, type: 3}
+  weaponSprite: {fileID: 21300000, guid: 5d459009583d04a4e8ba89054608eb7c, type: 3}
+  upgradeSOs: []

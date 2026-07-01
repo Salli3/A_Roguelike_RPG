@@ -23,8 +23,8 @@ public class Upgrade_Slot : MonoBehaviour
         upgradeButton.onClick.AddListener(OnUpgradeClicked);
     }
 
-    //Spawn an Upgrade_Slot (not actually spawn one, just turn them on and fill them up with data, spawning things is a story for another day)
-    public void Initialize(Upgrade_SO upgradeSO)
+    //Show an Upgrade_Slot with the passing in Upgrade_SO
+    public void ShowSlot(Upgrade_SO upgradeSO)
     {
         if (upgradeSO != null)
         {

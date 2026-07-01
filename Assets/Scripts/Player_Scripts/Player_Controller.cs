@@ -1,13 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
-public class Player_Movement : MonoBehaviour
+public class Player_Controler : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator anim;
+    [SerializeField] private Player_Combat playerCombat;
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            playerCombat.Attack();
+            Debug.Log("Gotten in put");
+        }
+    }
 
     private void FixedUpdate()
     {

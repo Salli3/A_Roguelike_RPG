@@ -10,7 +10,7 @@ public class Exp_Manager : MonoBehaviour
     [SerializeField] private Slider expSlider;
     [SerializeField] private TMP_Text levelText;
 
-    public static event Action<int> OnLevelUp;
+    public static event Action OnLevelUp;
 
     private void Start()
     {
@@ -40,7 +40,7 @@ public class Exp_Manager : MonoBehaviour
         Stats_Manager.instance.level++;
         Stats_Manager.instance.currentExp -= Stats_Manager.instance.expToLevel;
         Stats_Manager.instance.expToLevel = Stats_Manager.instance.expToLevel * Stats_Manager.instance.expGrowthMultiplier;
-        OnLevelUp?.Invoke(1);
+        OnLevelUp?.Invoke();
     }
 
     private void UpdateUI()

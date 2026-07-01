@@ -7,6 +7,6 @@ using UnityEngine;
 public class Upgrade_SO : ScriptableObject
 {
     public string upgradeName;
-    public string description;
+    [TextArea] public string description;
     public Sprite icon;
 }

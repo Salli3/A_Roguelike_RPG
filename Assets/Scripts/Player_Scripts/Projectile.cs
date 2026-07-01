@@ -6,8 +6,6 @@ public class Projectile : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     public Vector2 direction = Vector2.right;
     
-
-    [SerializeField] private float lifespan;
     [SerializeField] private float speed;
 
     [SerializeField] private LayerMask enemyLayer;
@@ -22,7 +20,7 @@ public class Projectile : MonoBehaviour
         sr.sprite = Stats_Manager.instance.projectileSprite;
         rb.velocity = direction * speed;
         RotateProjectile();
-        Destroy(gameObject, lifespan);
+        Destroy(gameObject, Stats_Manager.instance.attackRange);
     }
 
     private void RotateProjectile()

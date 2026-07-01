@@ -6,9 +6,8 @@ using UnityEngine;
 
 public class Upgrade_Manager : MonoBehaviour
 {
-    //TODO a reference to player Class_SO to pull the class Upgrade_SO list
     [SerializeField] private Upgrade_Slot[] upgradeSlots;
-    [SerializeField] private Upgrade_SO[] upgradeSOs;
+    //[SerializeField] private Upgrade_SO[] upgradeSOs;
     [SerializeField] private Upgrade_UI upgradeUI;
 
     public static event Action OnBattleEnd;
@@ -46,7 +45,7 @@ public class Upgrade_Manager : MonoBehaviour
     //Helper method to get a random upgrade from a list that has not been selected yet in this upgrade sequence
     private List<Upgrade_SO> GetRandomUpgrades(int count)
     {
-        List<Upgrade_SO> pool = new List<Upgrade_SO>(upgradeSOs);
+        List<Upgrade_SO> pool = new List<Upgrade_SO>(Stats_Manager.instance.upgradeSOs);
 
         // Fisher-Yates shuffle
         for (int i = pool.Count - 1; i > 0; i--)

@@ -17,11 +17,13 @@ MonoBehaviour:
   maxHP: 5
   cooldown: 1
   speed: 5
-  attackRange: 5
-  knockbackForce: 1
-  knockbackTime: 1
-  stunTime: 1
+  attackRange: 1
   isRanged: 1
   projectileSprite: {fileID: 21300000, guid: 8489a61a4cef58a48ae23d06794ad5b8, type: 3}
   weaponSprite: {fileID: 21300000, guid: 5d459009583d04a4e8ba89054608eb7c, type: 3}
-  upgradeSOs: []
+  upgradeSOs:
+  - {fileID: 11400000, guid: 6df30ac9e9aea5442b19a77946792533, type: 2}
+  - {fileID: 11400000, guid: 1edba1b3281cfea4383b6be559bae0eb, type: 2}
+  - {fileID: 11400000, guid: d96b161b3b1c2684c8a3779c27f35545, type: 2}
+  - {fileID: 11400000, guid: abfb1d8593a3835469e6308a6ac0b42c, type: 2}
+  - {fileID: 11400000, guid: 0742f53baf9ef4a45bf46f0cb08bbd81, type: 2}

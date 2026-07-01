@@ -15,20 +15,19 @@ public class Stats_Manager : MonoBehaviour
     public Sprite weaponSprite;
     public Upgrade_SO[] upgradeSOs;
 
-    [Header("Player Flexible Stats")]
+    [Header("Player Stats")]
     public float damage;
     public float currentHP;
     public float maxHP;
     public float cooldown;
     public float speed;
+    public float attackRange;
     //TODO crit
 
-    [Header("Player Fixed Stats")]
-    public float attackRange;
+    [Header("Player Fixed Stats")] 
     public float knockbackForce;
     public float knockbackTime;
-    public float stunTime;
-    
+    public float stunTime;  
 
     [Header("Player Exp Stats")]
     public int level;
@@ -64,22 +63,19 @@ public class Stats_Manager : MonoBehaviour
             return;
         }
 
-        // Flexible stats
+        // Player stats
         damage = currentClass.damage;
         maxHP = currentClass.maxHP;
         currentHP = maxHP; // start full
         cooldown = currentClass.cooldown;
         speed = currentClass.speed;
-
-        // Fixed stats
         attackRange = currentClass.attackRange;
-        knockbackForce = currentClass.knockbackForce;
-        knockbackTime = currentClass.knockbackTime;
-        stunTime = currentClass.stunTime;
 
-        // Combat settings
+
+        // Class settings
         isRanged = currentClass.isRanged;
         projectileSprite = currentClass.projectileSprite;
+        weaponSprite = currentClass.weaponSprite;
 
         // Upgrades
         upgradeSOs = currentClass.upgradeSOs;

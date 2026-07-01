@@ -51,6 +51,7 @@ public class Upgrade_UI : MonoBehaviour
         upgradeCanvasGroup.alpha = 1;
         upgradeCanvasGroup.interactable = true;
         upgradeCanvasGroup.blocksRaycasts = true;
+        Time.timeScale = 0;
     }
 
     //Continue upgrade sequence or stop if out of point
@@ -61,6 +62,7 @@ public class Upgrade_UI : MonoBehaviour
 
         levelUpIcons.RemoveAt(lastIndex);
         Destroy(iconToRemove);
+        Time.timeScale = 1;
 
         //Check if another round of upgrade sequence is needed or not
         if (levelUpIcons.Count > 0)

@@ -6,13 +6,23 @@ public class Player_Controler : MonoBehaviour
     [SerializeField] private Animator anim;
     [SerializeField] private Player_Combat playerCombat;
 
+    private float timer;
+
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        timer -= Time.deltaTime;
+        if (timer < 0)
         {
-            playerCombat.Attack();
-            Debug.Log("Gotten in put");
+            if (Input.GetMouseButtonDown(0))
+            {
+                playerCombat.Attack();
+            }
         }
+    }
+
+    public void ResetAttackTimer()
+    {
+        timer = Stats_Manager.instance.cooldown;
     }
 
     private void FixedUpdate()

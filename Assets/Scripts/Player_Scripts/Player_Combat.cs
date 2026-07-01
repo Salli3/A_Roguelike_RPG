@@ -7,6 +7,7 @@ public class Player_Combat : MonoBehaviour
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private Animator anim;
     [SerializeField] private Camera mainCamera;
+    [SerializeField] private Player_Controler playerControler;
 
     public LayerMask enemyLayer;
 
@@ -45,6 +46,7 @@ public class Player_Combat : MonoBehaviour
         Projectile projectile = Instantiate(projectilePrefab, attackPoint.position, Quaternion.identity).GetComponent<Projectile>();
         projectile.Init(aimDirection);
         anim.Play("Idle");
+        playerControler.ResetAttackTimer();
     }
 
     private Vector2 GetAimDirection()

@@ -62,7 +62,6 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player_Scripts\Weapon_Position.cs" />
     <Compile Include="Assets\Scripts\Upgrade_Scripts\Upgrade_Slot.cs" />
-    <Compile Include="Assets\Scripts\Enemy_Scripts\Enemy_Controller.cs" />
     <Compile Include="Assets\Scripts\Enemy_Scripts\Enemy_SO.cs" />
     <Compile Include="Assets\Scripts\Upgrade_Scripts\Upgrade_Manager.cs" />
     <Compile Include="Assets\Scripts\Enemy_Scripts\Enemy_Spawner.cs" />

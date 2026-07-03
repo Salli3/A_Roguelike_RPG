@@ -7,8 +7,8 @@ public class Class_SO : ScriptableObject
     public string className;
     public float damage;
     public float maxHP;
-    public float cooldown;
     public float speed;
+    public float attackCooldown;
     public float attackRange;
 
     [Header("Combat Settings")]

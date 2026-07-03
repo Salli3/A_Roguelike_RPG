@@ -22,7 +22,7 @@ public class Player_Controler : MonoBehaviour
 
     public void ResetAttackTimer()
     {
-        timer = Stats_Manager.instance.cooldown;
+        timer = Stats_Manager.instance.attackCooldown;
     }
 
     private void FixedUpdate()
@@ -34,5 +34,6 @@ public class Player_Controler : MonoBehaviour
         anim.SetFloat("vertical", Mathf.Abs(vertical));
 
         rb.velocity = new Vector2(horizontal, vertical).normalized * Stats_Manager.instance.speed;
+        //TODO dash
     }
 }

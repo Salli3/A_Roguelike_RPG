@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 214b14fcc8302bc49b1c0bbd260d281d, type: 3}
-  m_Name: Archer
+  m_Name: Warrior
   m_EditorClassIdentifier: 
-  className: Archer
+  className: Warrior
   damage: 1
-  maxHP: 5
+  maxHP: 10
   speed: 5
   attackCooldown: 1
-  attackRange: 1
-  isRanged: 1
-  projectileSprite: {fileID: 21300000, guid: 8489a61a4cef58a48ae23d06794ad5b8, type: 3}
-  weaponSprite: {fileID: 21300000, guid: 5d459009583d04a4e8ba89054608eb7c, type: 3}
+  attackRange: 0.1
+  isRanged: 0
+  projectileSprite: {fileID: 0}
+  weaponSprite: {fileID: 21300000, guid: 73e0e85906c54244592805efe5ba8c18, type: 3}
   upgradeSOs:
   - {fileID: 11400000, guid: 6df30ac9e9aea5442b19a77946792533, type: 2}
   - {fileID: 11400000, guid: 1edba1b3281cfea4383b6be559bae0eb, type: 2}

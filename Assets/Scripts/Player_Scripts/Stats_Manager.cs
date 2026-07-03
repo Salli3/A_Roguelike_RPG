@@ -8,8 +8,10 @@ public class Stats_Manager : MonoBehaviour
 {
     public static Stats_Manager instance;
 
+    //Inherit from Class_SO
     [Header("Player Class")]
     [SerializeField] private Class_SO currentClass;
+    public string className;
     public bool isRanged;
     public Sprite projectileSprite;
     public Sprite weaponSprite;
@@ -19,11 +21,12 @@ public class Stats_Manager : MonoBehaviour
     public float damage;
     public float currentHP;
     public float maxHP;
-    public float cooldown;
     public float speed;
     public float attackRange;
+    public float attackCooldown;
     //TODO crit
 
+    //Same for all player class
     [Header("Player Fixed Stats")] 
     public float knockbackForce;
     public float knockbackTime;
@@ -67,12 +70,13 @@ public class Stats_Manager : MonoBehaviour
         damage = currentClass.damage;
         maxHP = currentClass.maxHP;
         currentHP = maxHP; // start full
-        cooldown = currentClass.cooldown;
+        attackCooldown = currentClass.attackCooldown;
         speed = currentClass.speed;
         attackRange = currentClass.attackRange;
 
 
         // Class settings
+        className = currentClass.className;
         isRanged = currentClass.isRanged;
         projectileSprite = currentClass.projectileSprite;
         weaponSprite = currentClass.weaponSprite;

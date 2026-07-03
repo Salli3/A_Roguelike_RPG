@@ -47,6 +47,7 @@ public class Player_Combat : MonoBehaviour
         projectile.Init(aimDirection);
         anim.Play("Idle");
         playerControler.ResetAttackTimer();
+        //TODO make a projecttile prefab ref in player class to call it here
     }
 
     private Vector2 GetAimDirection()

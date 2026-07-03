@@ -29,8 +29,8 @@ public class Weapon_Position : MonoBehaviour
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         weaponTransform.rotation = Quaternion.Euler(0f, 0f, angle);
 
-        if (playerTransform.position.x - weaponTransform.position.x < 0 && transform.localScale.x < 0 ||
-                playerTransform.position.x - weaponTransform.position.x > 0 && transform.localScale.x > 0)
+        if (playerTransform.position.x < weaponTransform.position.x && transform.localScale.x < 0 ||
+                playerTransform.position.x > weaponTransform.position.x && transform.localScale.x > 0)
         {
             Flip();
         }

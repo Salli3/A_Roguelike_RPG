@@ -1,13 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
-public class Player_Movement : MonoBehaviour
+public class Player_Controler : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator anim;
+    [SerializeField] private Player_Combat playerCombat;
+
+    private float timer;
+
+    private void Update()
+    {
+        timer -= Time.deltaTime;
+        if (timer < 0)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                playerCombat.Attack();
+            }
+        }
+    }
+
+    public void ResetAttackTimer()
+    {
+        timer = Stats_Manager.instance.attackCooldown;
+    }
 
     private void FixedUpdate()
     {
@@ -18,5 +34,6 @@ public class Player_Movement : MonoBehaviour
         anim.SetFloat("vertical", Mathf.Abs(vertical));
 
         rb.velocity = new Vector2(horizontal, vertical).normalized * Stats_Manager.instance.speed;
+        //TODO dash
     }
 }

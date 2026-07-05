@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 531378d9d7987a14e9c92b6bf4302d7c, type: 3}
-  m_Name: EnemySO
+  m_Name: Angry_Pointy_Rock
   m_EditorClassIdentifier: 
-  enemyName: 
-  enemyHP: 0
-  enemyDamage: 0
-  dangerLevel: 0
-  enemyBehaviour: {fileID: 11500000, guid: 64f34f7d72c522d49b742b1aa61f30cd, type: 3}
+  enemyName: Angry Pointy Rock
+  enemyHP: 5
+  enemyDamage: 1
+  expReward: 1
+  dangerLevel: 1

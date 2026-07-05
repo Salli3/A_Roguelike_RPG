@@ -174,8 +174,7 @@ MonoBehaviour:
   sr: {fileID: 3499821706705566694}
   rb: {fileID: 5443883268167437826}
   direction: {x: 1, y: 0}
-  lifespan: 2
   speed: 20
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64

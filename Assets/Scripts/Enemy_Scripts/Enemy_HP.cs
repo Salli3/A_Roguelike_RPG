@@ -1,18 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy_HP : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Enemy_SO enemySO;
+    public float currentHP;
+
+    public delegate void EnemyDefeated(float exp);
+    public static event EnemyDefeated OnEnemyDefeated;
+
+    public void Start()
     {
-        
+        currentHP = enemySO.enemyHP;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ChangeHP(float amount)
     {
-        
+        currentHP -= amount;
+
+        if (currentHP > enemySO.enemyHP)
+        {
+            currentHP = enemySO.enemyHP;
+        }
+        else if (currentHP <= 0)
+        {
+            OnEnemyDefeated?.Invoke(enemySO.expReward);
+            Destroy(gameObject);
+        }
     }
 }

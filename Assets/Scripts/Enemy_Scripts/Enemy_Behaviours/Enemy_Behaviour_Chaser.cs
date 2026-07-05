@@ -39,17 +39,18 @@ public class Enemy_Behaviour_Chaser : MonoBehaviour
 
     private void SetState()
     {
+        if (isAttacking) return;
+
         if (Vector2.Distance(attackPoint.position, player.position) < attackRange / 2 && attackCooldownTimer <= 0)
         {
-            Debug.Log("Attacking");
             Attack();
         }
-        else if (Vector2.Distance(attackPoint.position, player.position) < attackRange / 2 && isAttacking == false)
+        else if (Vector2.Distance(attackPoint.position, player.position) < attackRange / 2)
         {
             rb.velocity = Vector2.zero;
             anim.Play("Idle");
         }
-        else if (isAttacking == false)
+        else
         {
             Chase();
         }
@@ -61,18 +62,11 @@ public class Enemy_Behaviour_Chaser : MonoBehaviour
         attackCooldownTimer = attackCooldown;
         anim.Play("Attack");
         isAttacking = true;
-        StartCoroutine(FinishAttacking());
     }
 
-    IEnumerator FinishAttacking()
+    public void DealDamage()
     {
-        yield return new WaitForSeconds(0.6f);
         isAttacking = false;
-        DealDamage();
-    }
-
-    private void DealDamage()
-    {
         Collider2D[] hits = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
 
         if (hits.Length > 0)

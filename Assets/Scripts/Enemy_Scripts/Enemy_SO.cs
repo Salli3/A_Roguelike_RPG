@@ -6,5 +6,6 @@ public class Enemy_SO : ScriptableObject
     public string enemyName;
     public float enemyHP;
     public float enemyDamage;
+    public float expReward;
     public int dangerLevel;
 }

@@ -31,12 +31,11 @@ public class Projectile : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Hit: " + collision.gameObject.name + " | Layer: " + LayerMask.LayerToName(collision.gameObject.layer));
+        //Debug.Log("Hit: " + collision.gameObject.name + " | Layer: " + LayerMask.LayerToName(collision.gameObject.layer));
         if ((enemyLayer.value & (1 << collision.gameObject.layer)) > 0)
         {
-            //collision.gameObject.GetComponent<Enemy_HP>().ChangeHP(Stats_Manager.instance.damage);
-            //collision.gameObject.GetComponent<Enemy_Knockback>().Knockback(transform, Stats_Manager.instance.knockbackForce, Stats_Manager.instance.knockbackTime, Stats_Manager.instance.stunTime);
-            //Destroy(gameObject);
+            //Debug.Log($"Dealt {Stats_Manager.instance.damage} to {collision.gameObject}");
+            collision.gameObject.GetComponent<Enemy_HP>().ChangeHP(Stats_Manager.instance.damage);
         }
         AttachToTarget(collision.gameObject.transform);
     }

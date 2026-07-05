@@ -9,10 +9,6 @@ public class Player_Combat : MonoBehaviour
     [SerializeField] private Camera mainCamera;
     [SerializeField] private Player_Controler playerControler;
 
-    public LayerMask enemyLayer;
-
-    private Vector2 aimDirection = Vector2.right;
-
     private void Awake()
     {
         if (mainCamera == null) mainCamera = Camera.main;

@@ -29,15 +29,15 @@ public class Projectile : MonoBehaviour
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         //Debug.Log("Hit: " + collision.gameObject.name + " | Layer: " + LayerMask.LayerToName(collision.gameObject.layer));
         if ((enemyLayer.value & (1 << collision.gameObject.layer)) > 0)
         {
             //Debug.Log($"Dealt {Stats_Manager.instance.damage} to {collision.gameObject}");
             collision.gameObject.GetComponent<Enemy_HP>().ChangeHP(Stats_Manager.instance.damage);
-        }
-        AttachToTarget(collision.gameObject.transform);
+            AttachToTarget(collision.gameObject.transform);
+        }       
     }
 
     private void AttachToTarget(Transform target)

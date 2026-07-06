@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Rammer_Attack_Trigger : MonoBehaviour
 {
-    [SerializeField] private Enemy_Behaviour_Rammer chaserBehaviour;
+    [SerializeField] private Enemy_Behaviour_Rammer rammerBehaviour;
 
     public void AttackTrigger()
     {
-        chaserBehaviour.Attack();
+        rammerBehaviour.Attack();
     }
 }

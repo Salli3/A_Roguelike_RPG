@@ -8,6 +8,7 @@ public class Player_Combat : MonoBehaviour
     [SerializeField] private Animator anim;
     [SerializeField] private Camera mainCamera;
     [SerializeField] private Player_Controler playerControler;
+    [SerializeField] private Transform weaponTransform;
 
     private void Awake()
     {
@@ -16,6 +17,7 @@ public class Player_Combat : MonoBehaviour
 
     public void Attack()
     {
+        //TODO make weapon attack anim name holder in class
         anim.Play("Bow_Charge");
     }
 
@@ -43,7 +45,6 @@ public class Player_Combat : MonoBehaviour
         projectile.Init(aimDirection);
         anim.Play("Idle");
         playerControler.ResetAttackTimer();
-        //TODO make a projecttile prefab ref in player class to call it here
     }
 
     private Vector2 GetAimDirection()

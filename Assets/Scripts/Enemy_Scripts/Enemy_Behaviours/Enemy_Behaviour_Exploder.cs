@@ -1,20 +1,17 @@
 using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class Enemy_Behaviour_Chaser : MonoBehaviour
+public class Enemy_Behaviour_Exploder : MonoBehaviour
 {
     [SerializeField] public float speed;
     [SerializeField] public float attackRange;
-    [SerializeField] public float attackCooldown;
-    [SerializeField] private float attackPointDistance = 1;
-
-    private float attackCooldownTimer;
-    private bool isAttacking;
+    private bool isAttacking = false;
 
     [SerializeField] private Enemy_SO enemySO;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform player;
-    [SerializeField] private Transform attackPoint;
     [SerializeField] private Animator anim;
     [SerializeField] private LayerMask playerLayer;
 
@@ -25,34 +22,16 @@ public class Enemy_Behaviour_Chaser : MonoBehaviour
 
     private void Update()
     {
-        attackCooldownTimer -= Time.deltaTime;
-
-        if (isAttacking == false)
-        {
-            Vector2 direction = (player.position - transform.position).normalized;
-
-            attackPoint.position = (Vector2)transform.position + direction * 1;
-        }
-
         SetState();
     }
 
     private void SetState()
     {
-        if (isAttacking)
-        {
-            rb.velocity = Vector2.zero;
-            return;
-        }
+        if (isAttacking) return;
 
-        if (Vector2.Distance(attackPoint.position, player.position) < attackRange / 2 && attackCooldownTimer <= 0)
+        if (Vector2.Distance(transform.position, player.position) < attackRange / 2)
         {
             Attack();
-        }
-        else if (Vector2.Distance(attackPoint.position, player.position) < attackRange / 2)
-        {
-            rb.velocity = Vector2.zero;
-            anim.Play("Idle");
         }
         else
         {
@@ -63,21 +42,22 @@ public class Enemy_Behaviour_Chaser : MonoBehaviour
     private void Attack()
     {
         rb.velocity = Vector2.zero;
-        anim.Play("Attack");
+        anim.Play("Exploding");
         isAttacking = true;
+        rb.bodyType = RigidbodyType2D.Kinematic;
     }
-
+    
     public void DealDamage()
     {
-        isAttacking = false;
-        attackCooldownTimer = attackCooldown;
-        Collider2D[] hits = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, attackRange, playerLayer);
 
         if (hits.Length > 0)
         {
             hits[0].GetComponent<Player_HP>().ChangeHP(enemySO.enemyDamage);
             Debug.Log($"Dealt {enemySO.enemyDamage} damage to {hits[0]}");
         }
+
+        Destroy(gameObject);
     }
 
     private void Chase()
@@ -100,9 +80,6 @@ public class Enemy_Behaviour_Chaser : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
-        Gizmos.DrawWireSphere(transform.position, attackPointDistance);
+        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 }
-
-

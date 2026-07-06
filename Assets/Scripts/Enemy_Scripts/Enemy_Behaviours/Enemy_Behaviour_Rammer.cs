@@ -55,14 +55,15 @@ public class Enemy_Behaviour_Rammer : MonoBehaviour
 
     private void Charging()
     {
-        if (isAttacking) return;
         rb.velocity = Vector2.zero;
         anim.Play("Charging");
         isAttacking = true;
+        rb.bodyType = RigidbodyType2D.Kinematic;
     }
 
     public void Attack()
     {
+        rb.bodyType = RigidbodyType2D.Dynamic;
         hasDealtDamage = false;
         StartCoroutine(Dash());
     }

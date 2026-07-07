@@ -15,5 +15,5 @@ MonoBehaviour:
   enemyName: Angry Exploding Rock
   enemyHP: 3
   enemyDamage: 3
-  expReward: 3
-  dangerLevel: 3
+  expReward: 30
+  dangerLevel: 5

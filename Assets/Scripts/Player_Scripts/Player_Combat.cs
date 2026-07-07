@@ -8,8 +8,6 @@ public class Player_Combat : MonoBehaviour
     [SerializeField] private Animator anim;
     [SerializeField] private Camera mainCamera;
     [SerializeField] private Player_Controler playerControler;
-    [SerializeField] private Transform weaponTransform;
-
     private void Awake()
     {
         if (mainCamera == null) mainCamera = Camera.main;

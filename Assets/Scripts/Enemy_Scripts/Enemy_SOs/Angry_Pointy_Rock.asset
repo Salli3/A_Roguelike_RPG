@@ -15,5 +15,5 @@ MonoBehaviour:
   enemyName: Angry Pointy Rock
   enemyHP: 5
   enemyDamage: 1
-  expReward: 1
-  dangerLevel: 1
+  expReward: 20
+  dangerLevel: 3

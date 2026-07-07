@@ -15,5 +15,5 @@ MonoBehaviour:
   enemyName: Angry PewPew Rock
   enemyHP: 3
   enemyDamage: 1
-  expReward: 1
-  dangerLevel: 1
+  expReward: 10
+  dangerLevel: 3

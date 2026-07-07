@@ -21,10 +21,10 @@ public class Enemy_Behaviour_Shooter : MonoBehaviour
     [SerializeField] private Sprite projectileSprite;
 
     [Header("Wander Area")]
-    public float wanderWidth = 5;
-    public float wanderHeight = 5;
-    public Vector2 startingPosition;
-    public float pausedDuration = 1.5f;
+    [SerializeField] private float wanderWidth = 30;
+    [SerializeField] private float wanderHeight = 15;
+    [SerializeField] private Vector2 startingPosition;
+    [SerializeField] private float pausedDuration = 1.5f;
 
     private bool isPaused = false;
     private bool isShooting = false;
@@ -125,8 +125,8 @@ public class Enemy_Behaviour_Shooter : MonoBehaviour
     {
         Vector2 direction = (target - (Vector2)transform.position).normalized;
 
-        if (direction.x > 0 && transform.localScale.x < 0 ||
-            direction.x < 0 && transform.localScale.x > 0)
+        if (target.x > transform.position.x && transform.localScale.x < 0 ||
+            target.x < transform.position.x && transform.localScale.x > 0)
         {
             Flip();
         }

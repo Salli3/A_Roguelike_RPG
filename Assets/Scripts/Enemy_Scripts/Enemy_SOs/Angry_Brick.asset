@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 531378d9d7987a14e9c92b6bf4302d7c, type: 3}
-  m_Name: Angry_Rock
+  m_Name: Angry_Brick
   m_EditorClassIdentifier: 
-  enemyName: Angry Rock
-  enemyHP: 5
+  enemyName: Angry Brick
+  enemyHP: 20
   enemyDamage: 1
-  expReward: 5
-  dangerLevel: 1
+  expReward: 100
+  dangerLevel: 10

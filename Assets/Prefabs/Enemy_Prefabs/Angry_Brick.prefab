@@ -170,7 +170,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3753408707044654784
 Transform:
   m_ObjectHideFlags: 0
@@ -230,7 +230,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -299,6 +299,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   meleeRange: 4
+  numProjectile: 3
+  spreadAngle: 20
   dashSpeed: 20
   dashDuration: 1
   wanderWidth: 30

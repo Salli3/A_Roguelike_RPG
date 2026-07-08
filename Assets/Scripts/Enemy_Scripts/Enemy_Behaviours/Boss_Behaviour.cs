@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Boss_Behaviour : MonoBehaviour
@@ -20,6 +19,11 @@ public class Boss_Behaviour : MonoBehaviour
 
     [Header("Melee Attack")]
     [SerializeField] private float meleeRange;
+
+    [Header("Ranged Attack")]
+    [SerializeField] private int numProjectile;
+    private int projectileCount = 0;
+    [SerializeField] private float spreadAngle;
 
     [Header("Special Attack (Dash)")]
     [SerializeField] private float dashSpeed;
@@ -88,12 +92,14 @@ public class Boss_Behaviour : MonoBehaviour
 
         //Pick between the three attack types 
         int attack = Random.Range(0, 3);
-        return attack switch
-        {
-            0 => EnemyState.MeleeAttack,
-            1 => EnemyState.RangedAttack,
-            _ => EnemyState.SpecialAttack,
-        };
+        //return attack switch
+        //{
+        //    0 => EnemyState.MeleeAttack,
+        //    1 => EnemyState.RangedAttack,
+        //    _ => EnemyState.SpecialAttack,
+        //};
+
+        return EnemyState.RangedAttack;
     }
 
     private void ChangeState(EnemyState state)
@@ -175,22 +181,33 @@ public class Boss_Behaviour : MonoBehaviour
     #region Ranged Attack
     private void RangedAttack()
     {
-        if (player.position.x > transform.position.x && transform.localScale.x < 0 || 
-            player.position.x < transform.position.x && transform.localScale.x > 0)
+        if (projectileCount < numProjectile)
         {
-            Flip();
-        }
+            if (player.position.x > transform.position.x && transform.localScale.x < 0 ||
+                player.position.x < transform.position.x && transform.localScale.x > 0)
+            {
+                Flip();
+            }
 
-        isAttacking = true;
-        rb.velocity = Vector2.zero;
-        rb.bodyType = RigidbodyType2D.Kinematic;
-        anim.Play("Ranged Attack");
+            isAttacking = true;
+            rb.velocity = Vector2.zero;
+            rb.bodyType = RigidbodyType2D.Kinematic;
+            anim.Play("Ranged Attack", 0, 0f);
+        }
+        else
+        {
+            FinishRangedAttack();
+        }
     }
 
     //Trigger method that got call from animation
     public void FireProjectile()
     {
-        Vector2 dir = (player.position - transform.position).normalized;
+        Vector2 dir = (player.position - attackPoint.position).normalized;
+
+        float randomOffset = Random.Range(-spreadAngle, spreadAngle);
+        dir = Quaternion.Euler(0f, 0f, randomOffset) * dir;
+
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
 
         Enemy_Projectile projectile = Instantiate(enemyProjectilePrefab, attackPoint.position, Quaternion.Euler(0f, 0f, angle)).GetComponent<Enemy_Projectile>();
@@ -199,7 +216,8 @@ public class Boss_Behaviour : MonoBehaviour
         projectile.enemySO = enemySO;
         projectile.transform.localScale = new Vector3(3f, 3f, 1f);
 
-        FinishRangedAttack();
+        projectileCount++;
+        RangedAttack();
     }
 
     public void FinishRangedAttack()
@@ -207,6 +225,8 @@ public class Boss_Behaviour : MonoBehaviour
         rb.bodyType = RigidbodyType2D.Dynamic;
         isAttacking = false;
         attackCooldownTimer = attackCooldown;
+
+        projectileCount = 0;
     }
     #endregion
 

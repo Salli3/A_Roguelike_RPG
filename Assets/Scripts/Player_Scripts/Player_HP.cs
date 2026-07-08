@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -9,6 +10,7 @@ public class Player_HP : MonoBehaviour
     [SerializeField] private TMP_Text hpText;
     [SerializeField] private Animator hpBarAnim;
     [SerializeField] private Slider hpBar;
+    public static event Action OnPlayerDefeated;
 
     private void Start()
     {
@@ -24,6 +26,7 @@ public class Player_HP : MonoBehaviour
 
         if (Stats_Manager.instance.currentHP <= 0)
         {
+            OnPlayerDefeated?.Invoke();
             gameObject.SetActive(false);
         }
         UpdateUI();

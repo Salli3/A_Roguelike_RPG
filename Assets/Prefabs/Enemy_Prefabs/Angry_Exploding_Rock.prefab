@@ -127,6 +127,7 @@ MonoBehaviour:
   speed: 6
   attackRange: 5
   enemySO: {fileID: 11400000, guid: e6e66b32b39da2943854337cfda480e9, type: 2}
+  enemyHP: {fileID: 7203407997387729962}
   rb: {fileID: 8512545886249148789}
   player: {fileID: 0}
   anim: {fileID: 7993282780976332501}

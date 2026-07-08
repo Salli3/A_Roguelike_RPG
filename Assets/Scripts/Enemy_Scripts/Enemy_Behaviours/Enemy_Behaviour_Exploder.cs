@@ -10,6 +10,7 @@ public class Enemy_Behaviour_Exploder : MonoBehaviour
     private bool isAttacking = false;
 
     [SerializeField] private Enemy_SO enemySO;
+    [SerializeField] private Enemy_HP enemyHP;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform player;
     [SerializeField] private Animator anim;
@@ -57,7 +58,7 @@ public class Enemy_Behaviour_Exploder : MonoBehaviour
             Debug.Log($"Dealt {enemySO.enemyDamage} damage to {hits[0]}");
         }
 
-        Destroy(gameObject);
+        enemyHP.ChangeHP(enemySO.enemyHP);
     }
 
     private void Chase()

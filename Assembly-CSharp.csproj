@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\Enemy_Scripts\Enemy_Attack_Triggers\Boss_Attack_Trigger.cs" />
     <Compile Include="Assets\Scripts\Upgrade_Scripts\Upgrade_SO.cs" />
     <Compile Include="Assets\Scripts\Scene_Changer.cs" />
+    <Compile Include="Assets\Scripts\Door_Manager.cs" />
     <Compile Include="Assets\Scripts\Player_Scripts\Weapon_Animation_Trigger.cs" />
     <Compile Include="Assets\Scripts\Enemy_Scripts\Enemy_Attack_Triggers\Chaser_Attack_Trigger.cs" />
     <Compile Include="Assets\Scripts\Player_Scripts\Exp_Manager.cs" />

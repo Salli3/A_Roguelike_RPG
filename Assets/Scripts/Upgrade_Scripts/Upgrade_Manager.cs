@@ -10,8 +10,6 @@ public class Upgrade_Manager : MonoBehaviour
     //[SerializeField] private Upgrade_SO[] upgradeSOs;
     [SerializeField] private Upgrade_UI upgradeUI;
 
-    public static event Action OnBattleEnd;
-
     private void OnEnable()
     {
         Upgrade_Slot.OnUpgradeChosen += ChooseUpgrade;
@@ -20,14 +18,6 @@ public class Upgrade_Manager : MonoBehaviour
     private void OnDisable()
     {
         Upgrade_Slot.OnUpgradeChosen -= ChooseUpgrade;
-    }
-
-    private void Update()
-    {
-        if (Input.GetButtonDown("Test UI"))
-        {
-            OnBattleEnd?.Invoke();
-        }
     }
 
     //Get a random list from the Upgrade pool through a helper method and pass it to an array of Upgrade_Slot

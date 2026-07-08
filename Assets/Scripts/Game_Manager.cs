@@ -7,6 +7,7 @@ public class Game_Manager : MonoBehaviour
 
     public Boss_UI bossUI;
     public int bossOnScreen = 0;
+    public int enemyOnScreen = 0;
     [SerializeField] private float difficultylevel = 10f;
     [SerializeField] private float difficultyMultiplier = 1.2f;
     [SerializeField] private int currentStage = 1;

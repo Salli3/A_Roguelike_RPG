@@ -45,7 +45,7 @@ public class Boss_UI : MonoBehaviour
         hpBarAnim.Play("Update");
     }
 
-    IEnumerator HideCanvas()
+    private IEnumerator HideCanvas()
     {
         yield return new WaitForSeconds(5);
         bossCanvasGroup.alpha = 0;

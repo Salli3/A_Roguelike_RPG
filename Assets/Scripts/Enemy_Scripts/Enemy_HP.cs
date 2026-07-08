@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Enemy_HP : MonoBehaviour
@@ -7,6 +8,8 @@ public class Enemy_HP : MonoBehaviour
 
     public delegate void EnemyDefeated(float exp);
     public static event EnemyDefeated OnEnemyDefeated;
+    public static event Action OnBattleEnd;
+
 
     public void Start()
     {
@@ -16,6 +19,7 @@ public class Enemy_HP : MonoBehaviour
             Game_Manager.instance.bossUI.ShowUI(this, enemySO);
             Game_Manager.instance.bossOnScreen++;
         }
+        Game_Manager.instance.enemyOnScreen++;
     }
 
     public void ChangeHP(float amount)
@@ -37,8 +41,16 @@ public class Enemy_HP : MonoBehaviour
                     Game_Manager.instance.bossUI.HideUI();
                 }
             }
+
+            Game_Manager.instance.enemyOnScreen--;
             OnEnemyDefeated?.Invoke(enemySO.expReward);
             Destroy(gameObject);
+
+            if (Game_Manager.instance.enemyOnScreen == 0)
+            {
+                Debug.Log("Battle ended");
+                OnBattleEnd?.Invoke();
+            }
             return;
         }
 

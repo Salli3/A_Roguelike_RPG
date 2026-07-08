@@ -12,6 +12,16 @@ public class Exp_Manager : MonoBehaviour
 
     public static event Action OnLevelUp;
 
+    private void OnEnable()
+    {
+        Enemy_HP.OnEnemyDefeated += GainExp;
+    }
+
+    private void OnDisable()
+    {
+        Enemy_HP.OnEnemyDefeated -= GainExp;
+    }
+
     private void Start()
     {
         UpdateUI();

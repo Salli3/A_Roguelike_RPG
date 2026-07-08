@@ -83,6 +83,9 @@ public class Boss_Behaviour : MonoBehaviour
 
     private EnemyState PickAttackState()
     {
+        //Pick new wander destination
+        target = GetRandomTarget();
+
         //Pick between the three attack types 
         int attack = Random.Range(0, 3);
         return attack switch
@@ -250,7 +253,6 @@ public class Boss_Behaviour : MonoBehaviour
         {
             collision.gameObject.GetComponent<Player_HP>().ChangeHP(enemySO.enemyDamage);
             Debug.Log($"Dealt {enemySO.enemyDamage} damage to {collision}");
-            hasDealtDamage = true;
         }
         hasDealtDamage = true;
     }

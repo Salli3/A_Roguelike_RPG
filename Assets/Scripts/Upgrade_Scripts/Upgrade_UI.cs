@@ -6,7 +6,7 @@ public class Upgrade_UI : MonoBehaviour
 {
     [SerializeField] private List<GameObject> levelUpIcons = new List<GameObject>();
     [SerializeField] private GameObject levelUpIconPrefab;
-    [SerializeField] private Transform levelUpIconContainer;
+    [SerializeField] private Transform levelUpPointContainer;
     [SerializeField] private CanvasGroup upgradeCanvasGroup;
     [SerializeField] private Upgrade_Manager upgradeManager;
 
@@ -39,7 +39,7 @@ public class Upgrade_UI : MonoBehaviour
     //Add new point indicator when level up
     private void AddNewPoint()
     {
-        GameObject newIcon = Instantiate(levelUpIconPrefab, levelUpIconContainer);
+        GameObject newIcon = Instantiate(levelUpIconPrefab, levelUpPointContainer);
         levelUpIcons.Add(newIcon);
     }
 
@@ -62,7 +62,6 @@ public class Upgrade_UI : MonoBehaviour
 
         levelUpIcons.RemoveAt(lastIndex);
         Destroy(iconToRemove);
-        Time.timeScale = 1;
 
         //Check if another round of upgrade sequence is needed or not
         if (levelUpIcons.Count > 0)
@@ -74,6 +73,7 @@ public class Upgrade_UI : MonoBehaviour
             upgradeCanvasGroup.alpha = 0;
             upgradeCanvasGroup.interactable = false;
             upgradeCanvasGroup.blocksRaycasts = false;
+            Time.timeScale = 1;
         }
     }
 }

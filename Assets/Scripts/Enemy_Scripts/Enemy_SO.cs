@@ -8,4 +8,5 @@ public class Enemy_SO : ScriptableObject
     public float enemyDamage;
     public float expReward;
     public int dangerLevel;
+    public bool isBoss;
 }

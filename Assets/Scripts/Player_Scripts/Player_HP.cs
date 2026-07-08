@@ -19,7 +19,7 @@ public class Player_HP : MonoBehaviour
     public void ChangeHP(float amount)
     {
         Stats_Manager.instance.currentHP -= amount;
-        hpBarAnim.Play("HP_Change");
+        hpBarAnim.Play("Update");
         hpText.text = Stats_Manager.instance.currentHP + "/" + Stats_Manager.instance.maxHP;
 
         if (Stats_Manager.instance.currentHP <= 0)

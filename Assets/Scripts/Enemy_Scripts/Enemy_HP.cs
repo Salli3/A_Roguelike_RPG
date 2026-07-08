@@ -11,6 +11,10 @@ public class Enemy_HP : MonoBehaviour
     public void Start()
     {
         currentHP = enemySO.enemyHP;
+        if(enemySO.isBoss)
+        {
+            Game_Manager.instance.bossUI.ShowUI(this, enemySO);
+        }
     }
 
     public void ChangeHP(float amount)
@@ -23,8 +27,19 @@ public class Enemy_HP : MonoBehaviour
         }
         else if (currentHP <= 0)
         {
+            if (enemySO.isBoss)
+            {
+                Game_Manager.instance.bossUI.UpdateUI(this, enemySO);
+                Game_Manager.instance.bossUI.HideUI();
+            }
             OnEnemyDefeated?.Invoke(enemySO.expReward);
             Destroy(gameObject);
+            return;
+        }
+
+        if (enemySO.isBoss)
+        {
+            Game_Manager.instance.bossUI.UpdateUI(this, enemySO);
         }
     }
 }

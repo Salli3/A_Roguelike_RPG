@@ -17,3 +17,4 @@ MonoBehaviour:
   enemyDamage: 1
   expReward: 100
   dangerLevel: 10
+  isBoss: 1

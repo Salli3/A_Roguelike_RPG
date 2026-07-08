@@ -21,6 +21,7 @@ public class Boss_UI : MonoBehaviour
 
     public void ShowUI(Enemy_HP enemyHP, Enemy_SO enemySO)
     {
+        StopAllCoroutines();
         bossCanvasGroup.alpha = 1;
         hpBarAnim.Play("Show");
         nameText.text = enemySO.enemyName;

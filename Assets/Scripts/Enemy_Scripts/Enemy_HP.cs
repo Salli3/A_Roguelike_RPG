@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Enemy_HP : MonoBehaviour
 {
-    [SerializeField] private Enemy_SO enemySO;
+    public Enemy_SO enemySO;
     public float currentHP;
 
     public delegate void EnemyDefeated(float exp);

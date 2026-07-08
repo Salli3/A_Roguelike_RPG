@@ -53,6 +53,9 @@ public class Enemy_Behaviour_Shooter : MonoBehaviour
 
         if (attackCooldownTimer <= 0)
         {
+            isPaused = false;
+            StopAllCoroutines();
+            target = GetRandomTarget();
             Shoot();
         }
         else if (Vector2.Distance(transform.position, player.position) < runAwayRange)

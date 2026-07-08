@@ -7,6 +7,10 @@ public class Game_Manager : MonoBehaviour
 
     public Boss_UI bossUI;
     public int bossOnScreen = 0;
+    [SerializeField] private float difficultylevel = 10f;
+    [SerializeField] private float difficultyMultiplier = 1.2f;
+    [SerializeField] private int currentStage = 1;
+    [SerializeField] private int bossStageInterval = 5;
 
     [Header("Persistent Objects")]
     public GameObject[] persistentObjects;
@@ -48,5 +52,21 @@ public class Game_Manager : MonoBehaviour
         }
 
         Destroy(gameObject);
+    }
+
+    public void IncreaseDifficulty()
+    {
+        difficultylevel *= difficultyMultiplier;
+        currentStage++;
+    }
+
+    public float GetDifficultyLevel()
+    {
+        return difficultylevel;
+    }
+
+    public bool IsBossStage()
+    {
+        return currentStage % bossStageInterval == 0;
     }
 }

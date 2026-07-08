@@ -25,6 +25,8 @@ public class Scene_Changer : MonoBehaviour
     {
         yield return new WaitForSeconds(fadeTime);
         player.position = newPlayerPosition;
+        Game_Manager.instance.IncreaseDifficulty();
         SceneManager.LoadScene(sceneToLoad);
+
     }
 }

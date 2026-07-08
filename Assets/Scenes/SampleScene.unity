@@ -6044,13 +6044,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySpawnerTransform: {fileID: 1445864251}
   enemySpawnIndicator: {fileID: 4988569379385144180, guid: 2ab980b7adff7384a8eeb04dcc8ac6dc, type: 3}
-  enemyPrefabs:
+  normalEnemyPrefabs:
+  - {fileID: 5088735671884940043, guid: 16db7484d6065e649b6dd9bb466e4312, type: 3}
+  - {fileID: 7148515706981907092, guid: 03b01229b0f2e69478c8d2214261ce4b, type: 3}
+  - {fileID: 7614089808751689953, guid: ddbd49adfd7d83b409d78353d052b6d3, type: 3}
+  - {fileID: 7153970590482875239, guid: 26c0b8dec0027e6429591df2115f45ae, type: 3}
+  mixEnemyPrefabs:
   - {fileID: 8079580834792824167, guid: 3b99b4b2a5c585a43b1d24de76664828, type: 3}
   - {fileID: 5088735671884940043, guid: 16db7484d6065e649b6dd9bb466e4312, type: 3}
   - {fileID: 7148515706981907092, guid: 03b01229b0f2e69478c8d2214261ce4b, type: 3}
   - {fileID: 7614089808751689953, guid: ddbd49adfd7d83b409d78353d052b6d3, type: 3}
   - {fileID: 7153970590482875239, guid: 26c0b8dec0027e6429591df2115f45ae, type: 3}
-  spawnInterval: 3
+  bossPrefabs:
+  - {fileID: 8079580834792824167, guid: 3b99b4b2a5c585a43b1d24de76664828, type: 3}
+  spawnInterval: 2
+  difficultyLevel: 0
+  isBossStage: 0
+  isBossChosen: 0
 --- !u!4 &1445864251
 Transform:
   m_ObjectHideFlags: 0
@@ -16227,6 +16237,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossUI: {fileID: 356783936}
   bossOnScreen: 0
+  difficultylevel: 10
+  difficultyMultiplier: 1.2
+  currentStage: 1
+  bossStageInterval: 5
   persistentObjects:
   - {fileID: 519420028}
   - {fileID: 1044446372}

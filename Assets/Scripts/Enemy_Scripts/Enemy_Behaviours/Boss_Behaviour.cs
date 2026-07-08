@@ -92,14 +92,12 @@ public class Boss_Behaviour : MonoBehaviour
 
         //Pick between the three attack types 
         int attack = Random.Range(0, 3);
-        //return attack switch
-        //{
-        //    0 => EnemyState.MeleeAttack,
-        //    1 => EnemyState.RangedAttack,
-        //    _ => EnemyState.SpecialAttack,
-        //};
-
-        return EnemyState.RangedAttack;
+        return attack switch
+        {
+            0 => EnemyState.MeleeAttack,
+            1 => EnemyState.RangedAttack,
+            _ => EnemyState.SpecialAttack,
+        };
     }
 
     private void ChangeState(EnemyState state)

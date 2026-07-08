@@ -14,6 +14,7 @@ public class Enemy_HP : MonoBehaviour
         if(enemySO.isBoss)
         {
             Game_Manager.instance.bossUI.ShowUI(this, enemySO);
+            Game_Manager.instance.bossOnScreen++;
         }
     }
 
@@ -30,7 +31,11 @@ public class Enemy_HP : MonoBehaviour
             if (enemySO.isBoss)
             {
                 Game_Manager.instance.bossUI.UpdateUI(this, enemySO);
-                Game_Manager.instance.bossUI.HideUI();
+                Game_Manager.instance.bossOnScreen--;
+                if (Game_Manager.instance.bossOnScreen == 0)
+                {
+                    Game_Manager.instance.bossUI.HideUI();
+                }
             }
             OnEnemyDefeated?.Invoke(enemySO.expReward);
             Destroy(gameObject);

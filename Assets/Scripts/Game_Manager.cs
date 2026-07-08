@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Game_Manager : MonoBehaviour
@@ -5,6 +6,7 @@ public class Game_Manager : MonoBehaviour
     public static Game_Manager instance;
 
     public Boss_UI bossUI;
+    public int bossOnScreen = 0;
 
     [Header("Persistent Objects")]
     public GameObject[] persistentObjects;

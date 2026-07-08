@@ -4811,7 +4811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e03a0b63764702b44b80f9807ed9ca32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentClass: {fileID: 11400000, guid: be40f7bb7cf68de45b5df1edf1bf5c6c, type: 2}
+  currentClass: {fileID: 11400000, guid: b3c938e2960c16543800a5604cd451e2, type: 2}
   className: 
   isRanged: 1
   projectileSprite: {fileID: 0}
@@ -6042,6 +6042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55a671530b7618d46a540f83bccfde62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemySpawnerTransform: {fileID: 1445864251}
   enemySpawnIndicator: {fileID: 4988569379385144180, guid: 2ab980b7adff7384a8eeb04dcc8ac6dc, type: 3}
   enemyPrefabs:
   - {fileID: 8079580834792824167, guid: 3b99b4b2a5c585a43b1d24de76664828, type: 3}
@@ -16225,6 +16226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossUI: {fileID: 356783936}
+  bossOnScreen: 0
   persistentObjects:
   - {fileID: 519420028}
   - {fileID: 1044446372}

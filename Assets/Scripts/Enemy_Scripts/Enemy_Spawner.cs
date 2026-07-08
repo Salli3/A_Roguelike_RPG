@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy_Spawner : MonoBehaviour
 {
+    [SerializeField] private Transform enemySpawnerTransform;
     [SerializeField] private GameObject enemySpawnIndicator;
     [SerializeField] private GameObject[] enemyPrefabs;
     [SerializeField] private float spawnInterval = 3f;
@@ -20,7 +21,7 @@ public class Enemy_Spawner : MonoBehaviour
 
     private IEnumerator SpawnEnemy()
     {
-        GameObject spawnIndicator = Instantiate(enemySpawnIndicator, new Vector3(Random.Range(-17f, 17f), Random.Range(-8f, 8f), 0), Quaternion.identity);
+        GameObject spawnIndicator = Instantiate(enemySpawnIndicator, new Vector3(Random.Range(-17f, 17f), Random.Range(-8f, 8f), 0), Quaternion.identity, enemySpawnerTransform);
 
         yield return new WaitForSeconds(spawnInterval);
         GameObject enemy = Instantiate(ChooseEnemy(), spawnIndicator.transform.position, Quaternion.identity);

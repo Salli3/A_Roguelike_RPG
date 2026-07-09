@@ -6049,7 +6049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHP: {fileID: 1451433383}
-  currentClass: {fileID: 11400000, guid: b3c938e2960c16543800a5604cd451e2, type: 2}
+  currentClass: {fileID: 11400000, guid: be40f7bb7cf68de45b5df1edf1bf5c6c, type: 2}
   className: 
   isRanged: 1
   projectileSprite: {fileID: 0}

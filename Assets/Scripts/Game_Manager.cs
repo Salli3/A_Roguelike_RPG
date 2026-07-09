@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Game_Manager : MonoBehaviour
@@ -8,6 +9,7 @@ public class Game_Manager : MonoBehaviour
     public Boss_UI bossUI;
     public int bossOnScreen = 0;
     public int enemyOnScreen = 0;
+    public int uiOnScreen = 0;
     [SerializeField] private float difficultylevel = 10f;
     [SerializeField] private float difficultyMultiplier = 1.2f;
     [SerializeField] public int currentStage = 0;
@@ -28,6 +30,27 @@ public class Game_Manager : MonoBehaviour
         {
             CleanUpAndDestroy();
             return;
+        }
+    }
+
+    public void PauseGame(bool isPaused)
+    {
+        if (isPaused)
+        {
+            uiOnScreen++;
+        }
+        else
+        {
+            uiOnScreen--;
+        }
+
+        if (uiOnScreen == 0)
+        {
+            Time.timeScale = 1;
+        }
+        else
+        {
+            Time.timeScale = 0;
         }
     }
 

@@ -33,6 +33,8 @@ public class Game_Over : MonoBehaviour
     private void DisplayGameOverScreen()
     {
         gameOverCanvas.alpha = 1;
+        gameOverCanvas.interactable = true;
+        gameOverCanvas.blocksRaycasts = true;
         scoreText.text = "Score: " + Game_Manager.instance.currentStage;
         anim.Play("Show");
         StartCoroutine(ShowOption());

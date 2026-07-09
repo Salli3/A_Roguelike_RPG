@@ -2,11 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Stats_Manager : MonoBehaviour
 {
     public static Stats_Manager instance;
+
+    [SerializeField] private Player_HP playerHP;
 
     //Inherit from Class_SO
     [Header("Player Class")]
@@ -38,6 +41,8 @@ public class Stats_Manager : MonoBehaviour
     public float currentExp;
     public float expToLevel;
     public float expGrowthMultiplier = 2;
+
+    public float moneyGain;
 
     private void Awake()
     {
@@ -86,4 +91,11 @@ public class Stats_Manager : MonoBehaviour
 
         Debug.Log($"Stats registered for {currentClass.className}");
     }
+
+    public void UpdateMaxHP() { maxHP *= 1.2f; playerHP.ChangeHP(0); }
+    public void UpdateDamage() { damage *= 1.2f; } 
+    public void UpdateAttackSpeed() { attackCooldown *= 0.8f; }
+    public void UpdateMovementSpeed() { speed *= 1.2f; }
+    public void UpdateExpGain() { expGain *= 1.2f; }
+    public void UpdateMoneyGain() { moneyGain *= 1.2f; } 
 }

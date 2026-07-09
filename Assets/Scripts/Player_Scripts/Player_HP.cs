@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -23,6 +21,7 @@ public class Player_HP : MonoBehaviour
         Stats_Manager.instance.currentHP -= amount;
         hpBarAnim.Play("Update");
         hpText.text = Stats_Manager.instance.currentHP + "/" + Stats_Manager.instance.maxHP;
+        hpText.text = Mathf.CeilToInt(Stats_Manager.instance.currentHP) + "/" + Mathf.CeilToInt(Stats_Manager.instance.maxHP);
 
         if (Stats_Manager.instance.currentHP <= 0)
         {

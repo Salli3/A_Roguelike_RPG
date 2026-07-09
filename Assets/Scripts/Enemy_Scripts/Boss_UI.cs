@@ -38,8 +38,9 @@ public class Boss_UI : MonoBehaviour
 
     public void UpdateUI(Enemy_HP enemyHP, Enemy_SO enemySO)
     {
+        if (enemyHP.currentHP < 0) { enemyHP.currentHP = 0; }
         nameText.text = enemySO.enemyName;
-        hpText.text = Mathf.Max(0, enemyHP.currentHP) + "/" + enemySO.enemyHP;
+        hpText.text = Mathf.CeilToInt(enemyHP.currentHP) + "/" + enemySO.enemyHP;
         hpBar.maxValue = enemySO.enemyHP;
         hpBar.value = enemyHP.currentHP;
         hpBarAnim.Play("Update");

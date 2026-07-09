@@ -26,7 +26,7 @@ public class Pause_Menu : MonoBehaviour
                 pauseCanvasGroup.alpha = 1;
                 pauseCanvasGroup.interactable = true;
                 pauseCanvasGroup.blocksRaycasts = true;
-                Time.timeScale = 0;
+                Game_Manager.instance.PauseGame(true);
                 isPaused = true;
             }
             else
@@ -34,7 +34,7 @@ public class Pause_Menu : MonoBehaviour
                 pauseCanvasGroup.alpha = 0;
                 pauseCanvasGroup.interactable = false;
                 pauseCanvasGroup.blocksRaycasts = false;
-                Time.timeScale = 1;
+                Game_Manager.instance.PauseGame(false);
                 isPaused = false;
             }
         }
@@ -45,7 +45,7 @@ public class Pause_Menu : MonoBehaviour
         pauseCanvasGroup.alpha = 0;
         pauseCanvasGroup.interactable = false;
         pauseCanvasGroup.blocksRaycasts = false;
-        Time.timeScale = 1;
+        Game_Manager.instance.PauseGame(false);
         isPaused = false;
     }
 

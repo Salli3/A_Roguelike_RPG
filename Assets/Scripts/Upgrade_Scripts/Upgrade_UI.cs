@@ -12,7 +12,7 @@ public class Upgrade_UI : MonoBehaviour
     [SerializeField] private CanvasGroup parentCanvasGroup;
     [SerializeField] private Upgrade_Manager upgradeManager;
     [SerializeField] private Animator anim;
-
+    private bool isPaused;
 
     private void OnEnable()
     {
@@ -54,13 +54,15 @@ public class Upgrade_UI : MonoBehaviour
     {
         if (levelUpIcons.Count == 0) return;
         upgradeManager.PopulateSlots();
+        //populate own slot
         parentCanvasGroup.alpha = 1;
         parentCanvasGroup.interactable = true;
         parentCanvasGroup.blocksRaycasts = true;
 
-        if (Time.timeScale == 1)
+        if (!isPaused)
         {
-            Time.timeScale = 0;
+            isPaused = true;
+            Game_Manager.instance.PauseGame(true);
             anim.Play("Upgrade_Panel_Fade_In");
             StartCoroutine(ShowUpgradePanel());
         }
@@ -85,7 +87,8 @@ public class Upgrade_UI : MonoBehaviour
             upgradeCanvasGroup.alpha = 0;
             upgradeCanvasGroup.interactable = false;
             upgradeCanvasGroup.blocksRaycasts = false;
-            Time.timeScale = 1;
+            isPaused = false;
+            Game_Manager.instance.PauseGame(false);
             anim.Play("Idle");
             parentCanvasGroup.alpha = 0;
             parentCanvasGroup.interactable = false;

@@ -6195,9 +6195,9 @@ MonoBehaviour:
   speed: 10
   attackRange: 1
   attackCooldown: 0
-  knockbackForce: 0
-  knockbackTime: 0
-  stunTime: 0
+  knockbackForce: 40
+  knockbackTime: 0.05
+  stunTime: 0.1
   level: 0
   expGain: 1
   currentExp: 0
@@ -8477,10 +8477,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Angry_Pointy_Rock
       objectReference: {fileID: 0}
-    - target: {fileID: 7614089808751689953, guid: ddbd49adfd7d83b409d78353d052b6d3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8696,6 +8692,9 @@ MonoBehaviour:
   hpBarAnim: {fileID: 943583427}
   hpBar: {fileID: 943583425}
   mainCamera: {fileID: 519420031}
+  currentSprite: {fileID: 1305912280}
+  playerSprite: {fileID: 21300000, guid: 043fa562abd40e94791e877de93d32eb, type: 3}
+  playerHitSprite: {fileID: 21300000, guid: 193c8e719bbc3aa4abc28a26766f1b5b, type: 3}
 --- !u!114 &1451433384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10336,10 +10335,6 @@ PrefabInstance:
     - target: {fileID: 7153970590482875239, guid: 26c0b8dec0027e6429591df2115f45ae, type: 3}
       propertyPath: m_Name
       value: Angry_Rock
-      objectReference: {fileID: 0}
-    - target: {fileID: 7153970590482875239, guid: 26c0b8dec0027e6429591df2115f45ae, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20006,7 +20001,7 @@ MonoBehaviour:
   uiOnScreen: 0
   difficultylevel: 10
   difficultyMultiplier: 1.2
-  currentStage: 1
+  currentStage: 0
   bossStageInterval: 5
   persistentObjects:
   - {fileID: 519420028}
@@ -20429,7 +20424,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2140219843
 Transform:
   m_ObjectHideFlags: 0
@@ -20502,10 +20497,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Angry_Brick
       objectReference: {fileID: 0}
-    - target: {fileID: 8079580834792824167, guid: 3b99b4b2a5c585a43b1d24de76664828, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20562,10 +20553,6 @@ PrefabInstance:
     - target: {fileID: 5088735671884940043, guid: 16db7484d6065e649b6dd9bb466e4312, type: 3}
       propertyPath: m_Name
       value: Angry_Exploding_Rock
-      objectReference: {fileID: 0}
-    - target: {fileID: 5088735671884940043, guid: 16db7484d6065e649b6dd9bb466e4312, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20739,10 +20726,6 @@ PrefabInstance:
     - target: {fileID: 7148515706981907092, guid: 03b01229b0f2e69478c8d2214261ce4b, type: 3}
       propertyPath: m_Name
       value: Angry_PewPew_Rock
-      objectReference: {fileID: 0}
-    - target: {fileID: 7148515706981907092, guid: 03b01229b0f2e69478c8d2214261ce4b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

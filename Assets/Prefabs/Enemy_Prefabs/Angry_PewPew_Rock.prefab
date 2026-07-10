@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 8383285091514583914}
   - component: {fileID: 7843315441627210013}
   - component: {fileID: 7553725298881833480}
+  - component: {fileID: 7426185139518412091}
   m_Layer: 6
   m_Name: Angry_PewPew_Rock
   m_TagString: Untagged
@@ -59,7 +60,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7148515706981907092}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -144,6 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySO: {fileID: 11400000, guid: 4c9583a1af7815b429212b8b54a273a1, type: 2}
   currentHP: 0
+  currentSprite: {fileID: 1246969405659693270}
 --- !u!114 &7553725298881833480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,6 +162,7 @@ MonoBehaviour:
   runAwayRange: 4
   attackCooldown: 3
   enemySO: {fileID: 11400000, guid: 4c9583a1af7815b429212b8b54a273a1, type: 2}
+  enemyKnockback: {fileID: 7426185139518412091}
   rb: {fileID: 992329600392170997}
   player: {fileID: 0}
   anim: {fileID: 8788344183833884422}
@@ -170,6 +173,20 @@ MonoBehaviour:
   wanderHeight: 15
   startingPosition: {x: 0, y: 0}
   pausedDuration: 1.5
+--- !u!114 &7426185139518412091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7148515706981907092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385f06c677726bf49994781b49411d94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 992329600392170997}
+  isKnockedback: 0
 --- !u!1 &8514242239687582629
 GameObject:
   m_ObjectHideFlags: 0

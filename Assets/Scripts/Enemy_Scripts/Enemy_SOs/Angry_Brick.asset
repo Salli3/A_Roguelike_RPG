@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 531378d9d7987a14e9c92b6bf4302d7c, type: 3}
   m_Name: Angry_Brick
   m_EditorClassIdentifier: 
+  enemySprite: {fileID: 21300000, guid: 9605d5cb4846f0f458eb415ab1a74bb7, type: 3}
+  enemyHitSprite: {fileID: 21300000, guid: eb092722dccd2cf4aba2e3126a458ba5, type: 3}
   enemyName: Angry Brick
   enemyHP: 20
   enemyDamage: 1
   expReward: 100
-  dangerLevel: 20
+  dangerLevel: 24
   isBoss: 1

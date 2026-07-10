@@ -10,6 +10,7 @@ public class Enemy_Behaviour_Exploder : MonoBehaviour
     private bool isAttacking = false;
 
     [SerializeField] private Enemy_SO enemySO;
+    [SerializeField] private Enemy_Knockback enemyKnockback;
     [SerializeField] private Enemy_HP enemyHP;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform player;
@@ -29,6 +30,12 @@ public class Enemy_Behaviour_Exploder : MonoBehaviour
     private void SetState()
     {
         if (isAttacking) return;
+
+        if (enemyKnockback.isKnockedback)
+        {
+            anim.Play("Idle");
+            return;
+        }
 
         if (Vector2.Distance(transform.position, player.position) < attackRange / 2)
         {

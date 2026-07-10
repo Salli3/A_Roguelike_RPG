@@ -30,10 +30,10 @@ public class Stats_Manager : MonoBehaviour
     //TODO crit
 
     //Same for all player class
-    [Header("Player Fixed Stats")] 
+    [Header("Player Fixed Stats")]
     public float knockbackForce;
     public float knockbackTime;
-    public float stunTime;  
+    public float stunTime;
 
     [Header("Player Exp Stats")]
     public int level;
@@ -92,10 +92,15 @@ public class Stats_Manager : MonoBehaviour
         Debug.Log($"Stats registered for {currentClass.className}");
     }
 
-    public void UpdateMaxHP() { maxHP *= 1.2f; playerHP.ChangeHP(0); }
-    public void UpdateDamage() { damage *= 1.2f; } 
+    public void UpdateMaxHP()
+    {
+        float oldHP = maxHP;
+        maxHP *= 1.2f;
+        playerHP.ChangeHP(oldHP - maxHP);
+    }
+    public void UpdateDamage() { damage *= 1.2f; }
     public void UpdateAttackSpeed() { attackCooldown *= 0.8f; }
     public void UpdateMovementSpeed() { speed *= 1.2f; }
     public void UpdateExpGain() { expGain *= 1.2f; }
-    public void UpdateMoneyGain() { moneyGain *= 1.2f; } 
+    public void UpdateMoneyGain() { moneyGain *= 1.2f; }
 }

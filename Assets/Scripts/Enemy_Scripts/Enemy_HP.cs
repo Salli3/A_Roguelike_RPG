@@ -1,10 +1,13 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class Enemy_HP : MonoBehaviour
 {
     public Enemy_SO enemySO;
     public float currentHP;
+
+    [SerializeField] private SpriteRenderer currentSprite;
 
     public delegate void EnemyDefeated(float exp);
     public static event EnemyDefeated OnEnemyDefeated;
@@ -14,7 +17,8 @@ public class Enemy_HP : MonoBehaviour
     public void Start()
     {
         currentHP = enemySO.enemyHP;
-        if(enemySO.isBoss)
+        currentSprite.sprite = enemySO.enemySprite;
+        if (enemySO.isBoss)
         {
             Game_Manager.instance.bossUI.ShowUI(this, enemySO);
             Game_Manager.instance.bossOnScreen++;
@@ -25,6 +29,7 @@ public class Enemy_HP : MonoBehaviour
     public void ChangeHP(float amount)
     {
         currentHP -= amount;
+        StartCoroutine(enemyHitSpriteChange());
 
         if (currentHP > enemySO.enemyHP)
         {
@@ -57,6 +62,15 @@ public class Enemy_HP : MonoBehaviour
         if (enemySO.isBoss)
         {
             Game_Manager.instance.bossUI.UpdateUI(this, enemySO);
-        }
+        }    
+    }
+    private IEnumerator enemyHitSpriteChange()
+    {
+        GetComponentInChildren<Animator>().enabled = false;
+        Debug.Log("Change Enemy Sprite");
+        currentSprite.sprite = enemySO.enemyHitSprite;
+        yield return new WaitForSeconds(0.1f);        
+        currentSprite.sprite = enemySO.enemySprite;
+        GetComponentInChildren<Animator>().enabled = true;
     }
 }

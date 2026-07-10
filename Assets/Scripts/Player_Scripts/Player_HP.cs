@@ -15,6 +15,10 @@ public class Player_HP : MonoBehaviour
     private Vector3 originalPos;
     private Coroutine shakeRoutine;
 
+    [SerializeField] private SpriteRenderer currentSprite;
+    [SerializeField] private Sprite playerSprite;
+    [SerializeField] private Sprite playerHitSprite;
+
     private void Start()
     {
         hpText.text = Stats_Manager.instance.currentHP + "/" + Stats_Manager.instance.maxHP;
@@ -56,6 +60,7 @@ public class Player_HP : MonoBehaviour
 
     private IEnumerator DoShake(float duration, float magnitude)
     {
+        currentSprite.sprite = playerHitSprite;
         originalPos = mainCamera.transform.localPosition;
         float elapsed = 0f;
 
@@ -72,5 +77,6 @@ public class Player_HP : MonoBehaviour
 
         mainCamera.transform.localPosition = originalPos;
         shakeRoutine = null;
+        currentSprite.sprite = playerSprite;
     }
 }

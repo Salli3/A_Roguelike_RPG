@@ -5,10 +5,11 @@ public class Projectile : MonoBehaviour
     [SerializeField] private SpriteRenderer sr;
     [SerializeField] private Rigidbody2D rb;
     public Vector2 direction = Vector2.right;
-    
+
     [SerializeField] private float speed;
 
     [SerializeField] private LayerMask enemyLayer;
+    [SerializeField] private Enemy_Knockback enemyKnockback;
 
     public void Init(Vector2 dir)
     {
@@ -36,8 +37,14 @@ public class Projectile : MonoBehaviour
         {
             //Debug.Log($"Dealt {Stats_Manager.instance.damage} to {collision.gameObject}");
             collision.gameObject.GetComponent<Enemy_HP>().ChangeHP(Stats_Manager.instance.damage);
+
+            Enemy_Knockback knockback = collision.gameObject.GetComponent<Enemy_Knockback>();
+            if (knockback != null)
+            {
+                knockback.Knockback(transform);
+            }
             AttachToTarget(collision.gameObject.transform);
-        }       
+        }
     }
 
     private void AttachToTarget(Transform target)

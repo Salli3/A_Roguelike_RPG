@@ -3,6 +3,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "EnemySO")]
 public class Enemy_SO : ScriptableObject
 {
+    public Sprite enemySprite;
+    public Sprite enemyHitSprite;
     public string enemyName;
     public float enemyHP;
     public float enemyDamage;

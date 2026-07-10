@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   className: Archer
   damage: 1
-  maxHP: 5
-  speed: 5
+  maxHP: 10
+  speed: 8
   attackCooldown: 1
   attackRange: 1
   isRanged: 1

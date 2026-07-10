@@ -12,6 +12,7 @@ public class Enemy_Behaviour_Chaser : MonoBehaviour
     private bool isAttacking;
 
     [SerializeField] private Enemy_SO enemySO;
+    [SerializeField] private Enemy_Knockback enemyKnockback;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform player;
     [SerializeField] private Transform attackPoint;
@@ -42,6 +43,12 @@ public class Enemy_Behaviour_Chaser : MonoBehaviour
         if (isAttacking)
         {
             rb.velocity = Vector2.zero;
+            return;
+        }
+
+        if (enemyKnockback.isKnockedback == true)
+        {
+            anim.Play("Idle");
             return;
         }
 

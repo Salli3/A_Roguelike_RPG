@@ -13,6 +13,7 @@ public class Enemy_Behaviour_Shooter : MonoBehaviour
     private float attackCooldownTimer;
 
     [SerializeField] private Enemy_SO enemySO;
+    [SerializeField] private Enemy_Knockback enemyKnockback;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform player;
     [SerializeField] private Animator anim;
@@ -48,6 +49,12 @@ public class Enemy_Behaviour_Shooter : MonoBehaviour
         if (isShooting)
         {
             rb.velocity = Vector2.zero;
+            return;
+        }
+
+        if (enemyKnockback.isKnockedback)
+        {
+            anim.Play("Idle");
             return;
         }
 
@@ -98,7 +105,7 @@ public class Enemy_Behaviour_Shooter : MonoBehaviour
 
     public void FinishShooting()
     {
-        Vector2 dir = (player.position - transform.position).normalized;
+        Vector2 dir = (player.position - attackPoint.position).normalized;
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
 
         Enemy_Projectile projectile = Instantiate(enemyProjectilePrefab, attackPoint.position, Quaternion.Euler(0f, 0f, angle)).GetComponent<Enemy_Projectile>();

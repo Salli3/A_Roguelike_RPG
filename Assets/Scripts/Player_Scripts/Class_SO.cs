@@ -8,8 +8,10 @@ public class Class_SO : ScriptableObject
     public float damage;
     public float maxHP;
     public float speed;
-    public float attackCooldown;
+    public float attackSpeed;
     public float attackRange;
+    public Sprite classSprite;
+    public Sprite classHitSprite;
 
     [Header("Combat Settings")]
     public bool isRanged;                

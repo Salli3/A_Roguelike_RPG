@@ -16,6 +16,8 @@ public class Stats_Manager : MonoBehaviour
     [SerializeField] private Class_SO currentClass;
     public string className;
     public bool isRanged;
+    public Sprite playerSprite;
+    public Sprite playerHitSprite;
     public Sprite projectileSprite;
     public Sprite weaponSprite;
     public Upgrade_SO[] upgradeSOs;
@@ -26,7 +28,7 @@ public class Stats_Manager : MonoBehaviour
     public float maxHP;
     public float speed;
     public float attackRange;
-    public float attackCooldown;
+    public float attackSpeed;
     //TODO crit
 
     //Same for all player class
@@ -34,6 +36,9 @@ public class Stats_Manager : MonoBehaviour
     public float knockbackForce;
     public float knockbackTime;
     public float stunTime;
+    public float dashSpeed;
+    public float dashDuration;
+    public float dashCooldown;
 
     [Header("Player Exp Stats")]
     public int level;
@@ -75,10 +80,11 @@ public class Stats_Manager : MonoBehaviour
         damage = currentClass.damage;
         maxHP = currentClass.maxHP;
         currentHP = maxHP; // start full
-        attackCooldown = currentClass.attackCooldown;
+        attackSpeed = currentClass.attackSpeed;
         speed = currentClass.speed;
         attackRange = currentClass.attackRange;
-
+        playerSprite = currentClass.classSprite;
+        playerHitSprite = currentClass.classHitSprite;
 
         // Class settings
         className = currentClass.className;
@@ -99,7 +105,7 @@ public class Stats_Manager : MonoBehaviour
         playerHP.ChangeHP(oldHP - maxHP);
     }
     public void UpdateDamage() { damage *= 1.2f; }
-    public void UpdateAttackSpeed() { attackCooldown *= 0.8f; }
+    public void UpdateAttackSpeed() { attackSpeed *= 1.2f; }
     public void UpdateMovementSpeed() { speed *= 1.2f; }
     public void UpdateExpGain() { expGain *= 1.2f; }
     public void UpdateMoneyGain() { moneyGain *= 1.2f; }

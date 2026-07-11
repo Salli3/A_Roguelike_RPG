@@ -9,6 +9,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] private float speed;
 
     [SerializeField] private LayerMask enemyLayer;
+    [SerializeField] private LayerMask obstacleLayer;
     [SerializeField] private Enemy_Knockback enemyKnockback;
 
     public void Init(Vector2 dir)
@@ -44,6 +45,10 @@ public class Projectile : MonoBehaviour
                 knockback.Knockback(transform);
             }
             AttachToTarget(collision.gameObject.transform);
+        }
+        else if ((obstacleLayer.value & (1 << collision.gameObject.layer)) > 0)
+        {
+            Destroy(gameObject);
         }
     }
 

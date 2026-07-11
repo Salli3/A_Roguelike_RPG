@@ -16,8 +16,10 @@ MonoBehaviour:
   damage: 1
   maxHP: 10
   speed: 8
-  attackCooldown: 1
+  attackSpeed: 1
   attackRange: 1
+  classSprite: {fileID: 21300000, guid: 043fa562abd40e94791e877de93d32eb, type: 3}
+  classHitSprite: {fileID: 21300000, guid: 193c8e719bbc3aa4abc28a26766f1b5b, type: 3}
   isRanged: 1
   projectileSprite: {fileID: 21300000, guid: 8489a61a4cef58a48ae23d06794ad5b8, type: 3}
   weaponSprite: {fileID: 21300000, guid: 5d459009583d04a4e8ba89054608eb7c, type: 3}

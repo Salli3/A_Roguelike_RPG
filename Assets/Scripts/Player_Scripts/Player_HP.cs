@@ -16,20 +16,21 @@ public class Player_HP : MonoBehaviour
     private Coroutine shakeRoutine;
 
     [SerializeField] private SpriteRenderer currentSprite;
-    [SerializeField] private Sprite playerSprite;
-    [SerializeField] private Sprite playerHitSprite;
+
+    [SerializeField] private Player_Controler playerControler;
 
     private void Start()
     {
-        hpText.text = Stats_Manager.instance.currentHP + "/" + Stats_Manager.instance.maxHP;
+        hpText.text = Mathf.CeilToInt(Stats_Manager.instance.currentHP) + "/" + Mathf.CeilToInt(Stats_Manager.instance.maxHP);
+        currentSprite.sprite = Stats_Manager.instance.playerSprite;
         UpdateUI();
     }
 
     public void ChangeHP(float amount)
     {
+        if (playerControler.isDashing) return;
         Stats_Manager.instance.currentHP -= amount;
         hpBarAnim.Play("Update");
-        hpText.text = Stats_Manager.instance.currentHP + "/" + Stats_Manager.instance.maxHP;
         hpText.text = Mathf.CeilToInt(Stats_Manager.instance.currentHP) + "/" + Mathf.CeilToInt(Stats_Manager.instance.maxHP);
 
         if (Stats_Manager.instance.currentHP <= 0)
@@ -50,7 +51,7 @@ public class Player_HP : MonoBehaviour
         hpBar.value = Stats_Manager.instance.currentHP;
     }
 
-    public void Shake(float duration = 0.2f, float magnitude = 0.15f)
+    public void Shake(float duration = 0.2f, float magnitude = 0.3f)
     {
         if (shakeRoutine != null)
             StopCoroutine(shakeRoutine);
@@ -60,7 +61,7 @@ public class Player_HP : MonoBehaviour
 
     private IEnumerator DoShake(float duration, float magnitude)
     {
-        currentSprite.sprite = playerHitSprite;
+        currentSprite.sprite = Stats_Manager.instance.playerHitSprite;
         originalPos = mainCamera.transform.localPosition;
         float elapsed = 0f;
 
@@ -77,6 +78,6 @@ public class Player_HP : MonoBehaviour
 
         mainCamera.transform.localPosition = originalPos;
         shakeRoutine = null;
-        currentSprite.sprite = playerSprite;
+        currentSprite.sprite = Stats_Manager.instance.playerSprite;
     }
 }

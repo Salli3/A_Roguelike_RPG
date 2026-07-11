@@ -3,23 +3,51 @@
   "WorkspaceRootPath": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\player_scripts\\class_so.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player_scripts\\class_so.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|d:\\sallie\\study\\unity\\a roguelike rpg\\assets\\scripts\\player_scripts\\stats_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player_scripts\\stats_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\player_scripts\\stats_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\upgrade_scripts\\upgrade_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\upgrade_scripts\\upgrade_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\upgrade_scripts\\upgrade_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\upgrade_scripts\\upgrade_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\scene_changer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scene_changer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\player_scripts\\action_bar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player_scripts\\action_bar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\enemy_scripts\\enemy_knockback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy_scripts\\enemy_knockback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\door_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\door_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|d:\\sallie\\study\\unity\\a roguelike rpg\\assets\\scripts\\player_scripts\\stats_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player_scripts\\stats_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\player_scripts\\class_so.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player_scripts\\class_so.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\player_scripts\\player_hp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player_scripts\\player_hp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|d:\\sallie\\study\\unity\\a roguelike rpg\\assets\\scripts\\player_scripts\\player_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\player_scripts\\player_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player_scripts\\player_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|d:\\sallie\\study\\unity\\a roguelike rpg\\assets\\scripts\\player_scripts\\player_dash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\player_scripts\\player_dash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player_scripts\\player_dash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -39,10 +67,6 @@
       "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player_scripts\\player_combat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\player_scripts\\action_bar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player_scripts\\action_bar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\enemy_scripts\\enemy_behaviours\\boss_behaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy_scripts\\enemy_behaviours\\boss_behaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -59,16 +83,8 @@
       "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy_scripts\\enemy_attack_triggers\\chaser_attack_trigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\door_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\door_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\player_scripts\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player_scripts\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\enemy_scripts\\enemy_knockback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy_scripts\\enemy_knockback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\enemy_scripts\\enemy_hp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -99,20 +115,8 @@
       "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\upgrade_scripts\\upgrade_slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Game_Over.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Game_Over.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\enemy_scripts\\boss_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy_scripts\\boss_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\upgrade_scripts\\upgrade_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\upgrade_scripts\\upgrade_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\upgrade_scripts\\upgrade_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\upgrade_scripts\\upgrade_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\player_scripts\\exp_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -131,10 +135,6 @@
       "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy_scripts\\enemy_attack_triggers\\exploder_attack_trigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\scene_changer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scene_changer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\enemy_scripts\\enemy_projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy_scripts\\enemy_projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -145,14 +145,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\assets\\scripts\\enemy_scripts\\enemy_attack_triggers\\rammer_attack_trigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A5FDCFA-535F-7A30-60B2-B1330A2DB2EF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy_scripts\\enemy_attack_triggers\\rammer_attack_trigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Menu_Manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Menu_Manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Pause_Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Pause_Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -162,11 +154,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 35,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "Game_Manager.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Game_Manager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Game_Manager.cs",
@@ -175,12 +167,11 @@
               "ViewState": "AgIAADAAAAAAAAAAAAAowDUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-08T00:19:22.014Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Stats_Manager.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Player_Scripts\\Stats_Manager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player_Scripts\\Stats_Manager.cs",
@@ -194,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Class_SO.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Player_Scripts\\Class_SO.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player_Scripts\\Class_SO.cs",
@@ -203,12 +194,11 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-03T06:48:24.449Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "Player_Controller.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Player_Scripts\\Player_Controller.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player_Scripts\\Player_Controller.cs",
@@ -217,12 +207,11 @@
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwAwAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-01T18:41:24.685Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "Player_Dash.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Player_Scripts\\Player_Dash.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player_Scripts\\Player_Dash.cs",
@@ -231,12 +220,11 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-11T05:41:21.615Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "Player_HP.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Player_Scripts\\Player_HP.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player_Scripts\\Player_HP.cs",
@@ -245,12 +233,11 @@
               "ViewState": "AgIAACUAAAAAAAAAAAAgwDUAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-03T14:31:15.317Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "Player_Combat.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Player_Scripts\\Player_Combat.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player_Scripts\\Player_Combat.cs",
@@ -259,12 +246,11 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-01T02:45:22.971Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "Projectile.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Player_Scripts\\Projectile.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player_Scripts\\Projectile.cs",
@@ -277,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "Weapon_Position.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Player_Scripts\\Weapon_Position.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player_Scripts\\Weapon_Position.cs",
@@ -286,12 +272,11 @@
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwBgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-03T06:41:37.354Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "Weapon_Animation_Trigger.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Player_Scripts\\Weapon_Animation_Trigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player_Scripts\\Weapon_Animation_Trigger.cs",
@@ -300,12 +285,11 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-07T04:59:59.509Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "Exp_Manager.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Player_Scripts\\Exp_Manager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player_Scripts\\Exp_Manager.cs",
@@ -318,33 +302,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 1,
               "Title": "Upgrade_Manager.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Upgrade_Scripts\\Upgrade_Manager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Upgrade_Scripts\\Upgrade_Manager.cs",
               "ToolTip": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Upgrade_Scripts\\Upgrade_Manager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Upgrade_Scripts\\Upgrade_Manager.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAAAF8AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-30T22:55:23.792Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 2,
               "Title": "Upgrade_UI.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Upgrade_Scripts\\Upgrade_UI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Upgrade_Scripts\\Upgrade_UI.cs",
               "ToolTip": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Upgrade_Scripts\\Upgrade_UI.cs",
               "RelativeToolTip": "Assets\\Scripts\\Upgrade_Scripts\\Upgrade_UI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwFoAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-30T23:20:04.227Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "Upgrade_SO.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Upgrade_Scripts\\Upgrade_SO.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Upgrade_Scripts\\Upgrade_SO.cs",
@@ -357,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "Upgrade_Slot.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Upgrade_Scripts\\Upgrade_Slot.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Upgrade_Scripts\\Upgrade_Slot.cs",
@@ -370,7 +356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "Owned_Slot.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Upgrade_Scripts\\Owned_Slot.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Upgrade_Scripts\\Owned_Slot.cs",
@@ -383,7 +369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "Enemy_SO.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Enemy_Scripts\\Enemy_SO.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy_Scripts\\Enemy_SO.cs",
@@ -396,7 +382,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "Enemy_HP.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Enemy_Scripts\\Enemy_HP.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy_Scripts\\Enemy_HP.cs",
@@ -409,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "Enemy_Spawner.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Enemy_Scripts\\Enemy_Spawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy_Scripts\\Enemy_Spawner.cs",
@@ -435,7 +421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "Enemy_Behaviour_Chaser.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Enemy_Scripts\\Enemy_Behaviours\\Enemy_Behaviour_Chaser.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy_Scripts\\Enemy_Behaviours\\Enemy_Behaviour_Chaser.cs",
@@ -448,7 +434,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "Enemy_Behaviour_Rammer.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Enemy_Scripts\\Enemy_Behaviours\\Enemy_Behaviour_Rammer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy_Scripts\\Enemy_Behaviours\\Enemy_Behaviour_Rammer.cs",
@@ -457,12 +443,11 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-05T07:32:08.029Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "Enemy_Behaviour_Shooter.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Enemy_Scripts\\Enemy_Behaviours\\Enemy_Behaviour_Shooter.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy_Scripts\\Enemy_Behaviours\\Enemy_Behaviour_Shooter.cs",
@@ -471,12 +456,11 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGsAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-05T12:57:32.251Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "Enemy_Behaviour_Exploder.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Enemy_Scripts\\Enemy_Behaviours\\Enemy_Behaviour_Exploder.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy_Scripts\\Enemy_Behaviours\\Enemy_Behaviour_Exploder.cs",
@@ -489,7 +473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "Boss_Behaviour.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Enemy_Scripts\\Enemy_Behaviours\\Boss_Behaviour.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy_Scripts\\Enemy_Behaviours\\Boss_Behaviour.cs",
@@ -498,12 +482,11 @@
               "ViewState": "AgIAADoAAAAAAAAAAAAQwGMAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-06T08:29:12.192Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "Chaser_Attack_Trigger.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Enemy_Scripts\\Enemy_Attack_Triggers\\Chaser_Attack_Trigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy_Scripts\\Enemy_Attack_Triggers\\Chaser_Attack_Trigger.cs",
@@ -512,8 +495,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-07T02:45:17.376Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -530,7 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "Shooter_Attack_Trigger.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Enemy_Scripts\\Enemy_Attack_Triggers\\Shooter_Attack_Trigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy_Scripts\\Enemy_Attack_Triggers\\Shooter_Attack_Trigger.cs",
@@ -543,7 +525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "Exploder_Attack_Trigger.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Enemy_Scripts\\Enemy_Attack_Triggers\\Exploder_Attack_Trigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy_Scripts\\Enemy_Attack_Triggers\\Exploder_Attack_Trigger.cs",
@@ -569,7 +551,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "Boss_UI.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Enemy_Scripts\\Boss_UI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy_Scripts\\Boss_UI.cs",
@@ -582,7 +564,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 3,
               "Title": "Scene_Changer.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Scene_Changer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Scene_Changer.cs",
@@ -591,11 +573,12 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-08T03:30:32.782Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 6,
               "Title": "Door_Manager.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Door_Manager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Door_Manager.cs",
@@ -604,52 +587,12 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-08T07:31:23.697Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Menu_Manager.cs",
-              "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Menu_Manager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Menu_Manager.cs",
-              "ToolTip": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Menu_Manager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Menu_Manager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T18:42:16.612Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "Pause_Menu.cs",
-              "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Pause_Menu.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Pause_Menu.cs",
-              "ToolTip": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Pause_Menu.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Pause_Menu.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAC8AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T20:01:15.491Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Game_Over.cs",
-              "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Game_Over.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Game_Over.cs",
-              "ToolTip": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Game_Over.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Game_Over.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T20:56:04.058Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 5,
               "Title": "Enemy_Knockback.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Enemy_Scripts\\Enemy_Knockback.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy_Scripts\\Enemy_Knockback.cs",
@@ -658,11 +601,12 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-10T03:10:03.987Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "Action_Bar.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Player_Scripts\\Action_Bar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player_Scripts\\Action_Bar.cs",
@@ -671,6 +615,20 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-11T04:50:50.702Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Stats_UI.cs",
+              "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Player_Scripts\\Stats_UI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player_Scripts\\Stats_UI.cs",
+              "ToolTip": "D:\\Sallie\\Study\\Unity\\A roguelike rpg\\Assets\\Scripts\\Player_Scripts\\Stats_UI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player_Scripts\\Stats_UI.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T09:00:13.78Z",
               "IsPinned": true,
               "EditorCaption": ""
             }

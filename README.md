@@ -14,13 +14,10 @@ A small 2D room-based shooter built in Unity. Fight through increasingly difficu
 
 ## Controls 
 
-WASD - Move 
-
-Left Mouse - Attack / Interact 
-
-Left Shift - Dash
-
-ESC - Pause 
+- WASD - Move 
+- Left Mouse - Attack / Interact 
+- Left Shift - Dash
+- ESC - Pause 
 
 ## Built With
 

@@ -30,4 +30,4 @@ This little project was made to learn Unity. It was fun to make - a good way to 
 
 ---
 
-*This is a learning project and the final version - no further updates planned, might comeback to add a thing or two but no promises. Thanks for playing!*
+*This is a learning project and the final version - no further updates planned, might comeback to add a thing or two but no promises*

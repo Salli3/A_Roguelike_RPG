@@ -16,6 +16,7 @@ public class Player_Combat : MonoBehaviour
     public void Attack()
     {
         //TODO make weapon attack anim name holder in class
+        anim.speed = Stats_Manager.instance.attackSpeed;
         anim.Play("Bow_Charge");
     }
 

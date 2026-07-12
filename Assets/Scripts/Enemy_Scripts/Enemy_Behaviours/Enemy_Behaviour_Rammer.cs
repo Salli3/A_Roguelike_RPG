@@ -12,6 +12,7 @@ public class Enemy_Behaviour_Rammer : MonoBehaviour
     private bool isAttacking;
 
     [SerializeField] private Enemy_SO enemySO;
+    [SerializeField] private Enemy_Knockback enemyKnockback;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform player;
     [SerializeField] private Animator anim;
@@ -37,6 +38,12 @@ public class Enemy_Behaviour_Rammer : MonoBehaviour
     private void SetState()
     {
         if (isAttacking) return;
+
+        if (enemyKnockback.isKnockedback)
+        {
+            anim.Play("Idle");
+            return;
+        }
 
         if (Vector2.Distance(transform.position, player.position) < attackRange && attackCooldownTimer <= 0)
         {

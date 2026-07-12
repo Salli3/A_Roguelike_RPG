@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 7809709813513003979}
   - component: {fileID: 8527754266589205551}
   - component: {fileID: 3319742672002296621}
+  - component: {fileID: 7534000861563106068}
   m_Layer: 6
   m_Name: Angry_Pointy_Rock
   m_TagString: Untagged
@@ -245,6 +246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySO: {fileID: 11400000, guid: 8b7c1d39aa4957141951d9207f9c2505, type: 2}
   currentHP: 0
+  currentSprite: {fileID: 1632360017235672818}
 --- !u!114 &3319742672002296621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,6 +263,7 @@ MonoBehaviour:
   attackRange: 5
   attackCooldown: 1
   enemySO: {fileID: 11400000, guid: 8b7c1d39aa4957141951d9207f9c2505, type: 2}
+  enemyKnockback: {fileID: 7534000861563106068}
   rb: {fileID: 656356711099483961}
   player: {fileID: 0}
   anim: {fileID: 6418043090872026180}
@@ -269,3 +272,17 @@ MonoBehaviour:
     m_Bits: 8
   dashSpeed: 20
   dashDuration: 0.5
+--- !u!114 &7534000861563106068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7614089808751689953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385f06c677726bf49994781b49411d94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 656356711099483961}
+  isKnockedback: 0

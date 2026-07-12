@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 531378d9d7987a14e9c92b6bf4302d7c, type: 3}
   m_Name: Angry_Exploding_Rock
   m_EditorClassIdentifier: 
+  enemySprite: {fileID: 21300000, guid: 74c0d0929029ee846a75050945e36759, type: 3}
+  enemyHitSprite: {fileID: 21300000, guid: f3ff3b1a40a24874d875ad91d80f7290, type: 3}
   enemyName: Angry Exploding Rock
   enemyHP: 3
   enemyDamage: 3
   expReward: 30
   dangerLevel: 5
+  isBoss: 0

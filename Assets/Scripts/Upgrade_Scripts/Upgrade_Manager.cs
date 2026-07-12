@@ -12,6 +12,7 @@ public class Upgrade_Manager : MonoBehaviour
     [SerializeField] private List<Owned_Slot> ownedSlots;
     [SerializeField] private GameObject ownedSlotPrefab;
     [SerializeField] private Transform ownedContainer;
+    [SerializeField] private Stats_UI statsUI;
 
     private void OnEnable()
     {
@@ -92,6 +93,7 @@ public class Upgrade_Manager : MonoBehaviour
         }
         AddUpgrade(upgradeSO);
         upgradeUI.SubtractPoint();
+        statsUI.UpdateAllStats();
     }
 
     public void AddUpgrade(Upgrade_SO upgradeSO)
